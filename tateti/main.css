@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+  --cell-bg: #f0f0f0;
+  --cell-hover: #d0d0d0;
+  --primary: #00bcd4;
+  --secondary: #4dd0e1;
+  --accent-ia: #ffca28;
+  --accent-ia-hover: #ffd54f;
+}
+
+:root[data-theme="dark"] {
+  --background: #121212;
+  --text-color: #ffffff;
+  --cell-bg: #333333;
+  --cell-hover: #555555;
+  --primary: #673ab7;
+  --secondary: #651fff;
+  --accent-ia: #e91e63;
+  --accent-ia-hover: #f50057;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+body > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  & h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--secondary) 50%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 4rem);
+  gap: 1rem;
+}
+
+.cell {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cell-bg);
+  border: 2px solid var(--primary);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: var(--cell-hover);
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#controls > button {
+  padding: 10px 20px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background: var(--secondary);
+  }
+}
+
+#controls > fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  & input[type="radio"] {
+    display: none;
+  }
+  & label {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    &:hover {
+      background: var(--secondary);
+    }
+  }
+  & input[type="radio"][name="difficulty"]:checked + label {
+    background: var(--secondary);
+  }
+  & input[type="radio"][name="gameMode"]:checked + label {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
+}
+
+#timer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#scores {
+  display: flex;
+  gap: 1rem;
+  & p {
+    font-weight: bold;
+    &#scoreX {
+      background-color: var(--primary);
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+    &#scoreO {
+      background-color: var(--accent-ia);
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+#records {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  list-style: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  & h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  & ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(4 * 4rem);
+    scrollbar-width: none;
+    overflow-y: auto;
+    & li {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid var(--primary);
+      color: var(--text-color);
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+#btnTheme {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  background-color: transparent;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  padding: 0.25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  & svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    fill: #ffca28;
+  }
+  &[data-theme="dark"] {
+    & svg {
+      fill: var(--primary);
+    }
+  }
+}

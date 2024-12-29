@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Te Ti - Minijuego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ta Te Ti</h1>
+        <article id="scores">
+            <p id="scoreX">X: 0</p>
+            <p id="scoreO">O: 0</p>
+        </article>
+        <p id="timer">Cambia la dificultad para cambiar el tiempo por turno</p>
+    </header>
+
+    <ul id="board"></ul>
+
+    <form id="controls">
+        <fieldset>
+            <input type="radio" id="mode1v1" name="gameMode" value="1v1">
+            <label for="mode1v1">Modo Normal</label>
+            <input type="radio" id="mode1vIA" name="gameMode" value="1vIA">
+            <label for="mode1vIA">Modo IA</label>
+        </fieldset>
+
+        <fieldset>
+            <input type="radio" id="easy" name="difficulty" />
+            <label for="easy">Fácil</label>
+            <input type="radio" id="medium" name="difficulty" />
+            <label for="medium">Medio</label>
+            <input type="radio" id="hard" name="difficulty" />
+            <label for="hard">Difícil</label>
+        </fieldset>
+    </form>
+
+    <section id="records">
+        <h1>Ultimas Partidas</h1>
+        <ul></ul>
+    </section>
+
+    <form>
+        <button type="button" id="btnTheme" data-theme="dark">Dark</button>
+    </form>
+
+</body>
+
+</html>
