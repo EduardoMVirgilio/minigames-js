@@ -1,0 +1,128 @@
+@import url("css/base.css");
+
+main > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  & > form {
+    display: flex;
+    background-color: var(--text);
+    border-radius: 1rem;
+    & > input {
+      display: none;
+      &:checked + label {
+        background-color: var(--accent);
+        color: var(--text);
+      }
+    }
+    & > label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--text);
+      color: var(--accent);
+      cursor: pointer;
+      outline: none;
+      transition: all 150ms ease-in-out;
+    }
+  }
+}
+
+#upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  & > input {
+    display: none;
+  }
+  & > label {
+    height: 25dvh;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    border: 0.25rem solid transparent;
+    &:hover {
+      background-color: var(--accent);
+    }
+    &.draggover {
+      background-color: var(--accent);
+      border-color: var(--text);
+    }
+  }
+  & > button {
+    padding: 0.5rem 1rem;
+    background-color: var(--text);
+    color: var(--background);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  max-width: calc(520px + 1rem);
+  width: 100%;
+  gap: 0.5rem;
+  &.loading {
+    pointer-events: none;
+    & > li {
+      animation: loading 1s infinite alternate;
+    }
+  }
+  & > li {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    animation: loading 1s 1 alternate forwards;
+    &:hover {
+      background-color: var(--accent);
+    }
+  }
+}
+
+@keyframes loading {
+  from {
+    background-color: var(--primary);
+  }
+  to {
+    background-color: var(--accent);
+  }
+}
