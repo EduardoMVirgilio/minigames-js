@@ -1,0 +1,175 @@
+[
+  {
+    "nombre": "Emma",
+    "historia": "El Eco",
+    "descripcion": "Programadora atrapada en una simulación creada por ella misma.",
+    "decisiones": [
+      {
+        "id": 0,
+        "text": "Apagar el sistema, arriesgando quedar atrapada.",
+        "sucess": "Emma destruye la simulación, pero pierde partes de sus recuerdos.",
+        "confirm": 1,
+        "reject": 3,
+        "error": "Emma queda atrapada en un bucle temporal."
+      },
+      {
+        "id": 1,
+        "text": "Seguir simulando hasta encontrar una falla para escapar.",
+        "sucess": "Emma acepta la simulación como la nueva realidad y se convierte en su 'Dios'.",
+        "confirm": 2,
+        "reject": 3,
+        "error": "Emma queda atrapada en un bucle temporal."
+      },
+      {
+        "id": 2,
+        "text": "Buscar una puerta de salida oculta en el sistema.",
+        "sucess": "Emma encuentra la salida pero debe sacrificar parte de sus memorias emocionales.",
+        "confirm": 4,
+        "reject": 3,
+        "error": "Emma queda atrapada en un bucle temporal."
+      },
+      {
+        "id": 3,
+        "text": "Reiniciar el sistema y arriesgarse a un colapso.",
+        "sucess": "Emma reinicia el sistema y queda atrapada en un bucle temporal.",
+        "confirm": 0,
+        "reject": null,
+        "error": "Fin de la simulación."
+      },
+      {
+        "id": 4,
+        "text": "Conectar con otra simulación para pedir ayuda.",
+        "sucess": "Emma establece contacto pero revela su ubicación, atrayendo amenazas externas.",
+        "confirm": 0,
+        "reject": null,
+        "error": "Fin de la simulación."
+      }
+    ]
+  },
+  {
+    "nombre": "Alex",
+    "historia": "El Espejo",
+    "descripcion": "Periodista obsesionado con teorías conspirativas.",
+    "decisiones": [
+      {
+        "id": 0,
+        "text": "Confiar en uno de sus reflejos.",
+        "sucess": "Alex entra en uno de los espejos y descubre una habitación secreta.",
+        "confirm": 1,
+        "reject": null,
+        "error": "Alex es atrapado por un reflejo maligno."
+      },
+      {
+        "id": 1,
+        "text": "En la nueva habitación, escucha una voz misteriosa, que le da instrucciones. Seguirlas o no.",
+        "sucess": "Alex descubre un patrón oculto que lo puede sacar de ese lugar, pero comienza a dudar de su propia identidad.",
+        "confirm": 2,
+        "reject": null,
+        "error": "Alex queda atrapado en un trance tras escuchar esa voz."
+      },
+      {
+        "id": 2,
+        "text": "Obsevando sus circunstancias, se da cuenta que si ingresaras el patron podrias, romper los otros espejos, arriesgándore a quedar ciego. ¿Lo haces?",
+        "sucess": "Alex ha roto los espejos y ha encontrado una salida, pero ha perdido la vista.",
+        "confirm": 3,
+        "reject": 4,
+        "error": "Alex ha roto los espejos y ha encontrado una salida donde se encuentra con una maquina."
+      },
+      {
+        "id": 3,
+        "text": "Ahora Alex finalmente despierta, pero esta conectado a una maquina, en donde dice que si desbloquea una memoria clave, podra salir de ahi. ¿Lo haces?",
+        "sucess": "Alex pierde la vista, pero a conseguido un estado de claridad mental absoluto. Fin",
+        "confirm": null,
+        "reject": null,
+        "error": "Alex desbloquea una memoria clave, pero desencadena una reacción inesperada en la simulación."
+      },
+      {
+        "id": 4,
+        "text": "Ahora Alex finalmente despierta, pero esta conectado a una maquina, en donde dice que si desbloquea una memoria clave, podra salir de ahi. ¿Lo haces?",
+        "sucess": "Alex desbloqueo la memoria clave y en ese momento se despierta en una oficina, donde se pregunta si esta en el mundo real.",
+        "confirm": null,
+        "reject": null,
+        "error": "Al no encontrar la memoria clave, Alex queda atrapado en un bucle de esta simulación."
+      }
+    ]
+  },
+  {
+    "nombre": "Lila",
+    "historia": "El Laberinto",
+    "descripcion": "Estudiante de psicología.",
+    "decisiones": [
+      {
+        "id": 0,
+        "text": "Lila se encuentra en un laberinto mental, donde debe enfrentar sus miedos. Huir o enfrentarlos.",
+        "sucess": "Lila decide enfrentarlos y descubre una salida, pero queda paralizada ante su primer miedo.",
+        "confirm": 1,
+        "reject": null,
+        "error": "Lila queda atrapada, en el laberinto, en posicion fetal en el suelo."
+      },
+      {
+        "id": 1,
+        "text": "Lila esta paralizada ante su primer medio, el rechazo social. Se pregunta si huir o enfrentarlo.",
+        "sucess": "Lila decide enfrentarlo y descubre que lo importante es aceptarse a si misma. Y continua su camino.",
+        "confirm": 2,
+        "reject": null,
+        "error": "Lila decide huir y queda atrapada en el laberinto escuchando voces que la menosprecian."
+      },
+      {
+        "id": 2,
+        "text": "Lila esta paralizada ante su segundo medio, la automatonofobia. Se pregunta si huir o enfrentarlo.",
+        "sucess": "Lila decide enfrentarlos y descubre que lo importante es confiar en si misma. Y continua su camino.",
+        "confirm": 3,
+        "reject": 4,
+        "error": "Lila queda atrapada, en el laberinto formando parte de los titeres."
+      },
+      {
+        "id": 3,
+        "text": "Lila finalmente encuentra con la salida del laberinto, pero antes tiene que superar su ultimo miedo, la atiquifobia, donde debe enfrentar su miedo al fracazo. Que decides, huir o enfrentarlo.",
+        "sucess": "Lila decide enfrentarlos y finalmente sale de su laberinto mental, donde se revela como una persona totalmente nueva.",
+        "confirm": 0,
+        "reject": null,
+        "error": "Lila queda atrapada, en el laberinto, inmovilizada recordando todos sus fracazos tanto en su vida personal como en la profesional."
+      },
+      {
+        "id": 4,
+        "text": "Lila debe decidir si enfrentar su miedo a la soledad o huir de el.",
+        "sucess": "Lila decide enfrentarlo y vuelve a empezar nuevamente su camino por el laberinto.",
+        "confirm": 0,
+        "reject": null,
+        "error": "Lila al intentar huir de su miedo a la soledad, queda atrapada en el laberinto, donde se pierde en si misma."
+      }
+    ]
+  },
+  {
+    "nombre": "Gabriel",
+    "historia": "La Maquina",
+    "descripcion": "Experto en inteligencia artificial y realidad virtual.",
+    "decisiones": [
+      {
+        "text": "Arreglar el código y restaurar el sistema.",
+        "sucess": "Gabriel restaura el sistema pero se fusiona con él, dejando atrás su humanidad.",
+        "confirm": [1, 4]
+      },
+      {
+        "text": "Borrar el mundo digital, eliminando a sus habitantes simulados.",
+        "sucess": "Gabriel destruye todo, despertando solo en el mundo real.",
+        "confirm": [0]
+      },
+      {
+        "text": "Crear una copia de seguridad y probar una restauración parcial.",
+        "sucess": "Gabriel estabiliza el sistema, pero queda atrapado en él como observador.",
+        "confirm": [2]
+      },
+      {
+        "text": "Buscar fallas en el código para explotarlas.",
+        "sucess": "Gabriel encuentra una vulnerabilidad, pero los habitantes digitales se rebelan.",
+        "confirm": [3]
+      },
+      {
+        "text": "Fusionar el código defectuoso con su propia mente.",
+        "sucess": "Gabriel obtiene control total, pero pierde su identidad humana.",
+        "confirm": [4]
+      }
+    ]
+  }
+]
