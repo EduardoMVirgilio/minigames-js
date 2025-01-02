@@ -5,10 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Games | Mistery</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="app.js"></script>
 </head>
 
 <body>
 
+    <main>
+        <header>
+            <h1>Mini Game | Mistery</h1>
+            <form id="mistery">
+                <fieldset>
+                    <input type="radio" name="theme" id="light" value="light">
+                    <label for="light">light</label>
+                    <input type="radio" name="theme" id="dark" value="dark">
+                    <label for="dark">dark</label>
+                </fieldset>
+                <fieldset>
+                    <label for="secret">Ingresa la contraseña para ganar</label>
+                    <input type="text" name="secret" id="secret">
+                    <button>Revelar</button>
+                </fieldset>
+            </form>
+        </header>
+        <ul>
+            <li>
+                <picture><img src="https://placehold.co/72/white/purple?text=E" alt=""></picture>
+                <h2>Emma</h2>
+                <p>Científica Obsesiva</p>
+            </li>
+            <li>
+                <picture><img src="https://placehold.co/72/white/purple?text=A" alt=""></picture>
+                <h2>Alex</h2>
+                <p>Investigador paranoico</p>
+            </li>
+            <li>
+                <picture><img src="https://placehold.co/72/white/purple?text=L" alt=""></picture>
+                <h2>Lila</h2>
+                <p>Sobreviviente introspectiva</p>
+            </li>
+            <li>
+                <picture><img src="https://placehold.co/72/white/purple?text=D" alt=""></picture>
+                <h2>Dani</h2>
+                <p>Hacker informatico</p>
+            </li>
+        </ul>
+        <dialog id="history" open>
+            <article>
+                <h3 id="system"></h3>
+                <h2 id="character"></h2>
+                <p id="dialog"></p>
+                <form id="choices">
+                    <input type="radio" name="action" id="risk" value="true">
+                    <label for="risk"></label>
+                    <input type="radio" name="action" id="wait" value="false">
+                    <label for="wait"></label>
+                </form>
+            </article>
+        </dialog>
+    </main>
 </body>
 
 </html>
