@@ -1,0 +1,199 @@
+{
+  "characters": {
+    "Emma": {
+      "profile": {
+        "age": 34,
+        "occupation": "Programadora e Ingeniera Biomédica"
+      },
+      "story": [
+        {
+          "scene": "Despertar en el Laboratorio",
+          "description": "Emma yace inconsciente frente a la terminal principal. Lentamente abre los ojos en una sala iluminada por luces parpadeantes.",
+          "dialogues": [
+            {
+              "system": "Identificación biométrica confirmada. Bienvenida, Dra. Velázquez."
+            },
+            {
+              "system": "Protocolo de emergencia iniciado. Se requiere acción inmediata."
+            }
+          ],
+          "choices": {
+            "A": {
+              "text": "Apagar el Sistema",
+              "result": "Se inicia el apagado. El laboratorio entra en modo de emergencia. Emma siente cómo el sistema se apaga poco a poco, pero el temor de perder información la inquieta."
+            },
+            "B": {
+              "text": "Mantener Sistema Activo",
+              "result": "El sistema entra en modo diagnóstico. Emma revisa las pantallas, pero encuentra datos corruptos que deberá descifrar para entender lo que está ocurriendo."
+            }
+          }
+        },
+        {
+          "scene": "Investigación en el Laboratorio",
+          "description": "Emma explora el laboratorio en busca de respuestas, enfrentando luces tenues, pantallas parpadeantes y sonidos de ventiladores. Los registros muestran información incompleta y confusa.",
+          "dialogues": [
+            {
+              "system": "Error en la sincronización de datos. Restauración en curso."
+            },
+            {
+              "system": "Advertencia: Niveles de integridad críticos. Se recomienda proceder con precaución."
+            }
+          ],
+          "choices": {
+            "A": {
+              "text": "Buscar manualmente en los registros.",
+              "result": "Emma encuentra archivos parciales que apuntan a experimentos fallidos y mensajes encriptados."
+            },
+            "B": {
+              "text": "Intentar reparar el sistema.",
+              "result": "El sistema reinicia parcialmente, pero algunos datos se pierden. Emma obtiene acceso a un mensaje de advertencia previo."
+            }
+          }
+        }
+      ]
+    },
+    "Alex": {
+      "profile": {
+        "age": 29,
+        "occupation": "Periodista de Investigación"
+      },
+      "story": [
+        {
+          "scene": "El Cuarto de Monitores",
+          "description": "Alex despierta en una sala oscura, rodeado de pantallas que muestran diferentes ángulos de la habitación. Nota su reflejo en un espejo que lo observa.",
+          "dialogues": [
+            {
+              "system": "Bienvenido al centro de vigilancia. Estado de monitoreo activo."
+            },
+            {
+              "system": "Anomalía detectada en la alimentación de cámaras. Verificar seguridad del sistema."
+            }
+          ],
+          "choices": {
+            "A": {
+              "text": "Destruir las cámaras.",
+              "result": "Las cámaras caen, pero las luces de emergencia se activan, intensificando su paranoia."
+            },
+            "B": {
+              "text": "Usar el sistema de vigilancia.",
+              "result": "Alex analiza las pantallas, encontrando patrones extraños y anomalías en las grabaciones."
+            }
+          }
+        },
+        {
+          "scene": "Investigación en la Sala de Archivos",
+          "description": "Alex explora los archivadores en busca de evidencia. Encuentra documentos deteriorados y pistas cripticas que parecen ocultar la verdad.",
+          "dialogues": [
+            { "system": "Archivo dañado. Restauración manual requerida." },
+            {
+              "system": "Advertencia: Acceso restringido. Código de autorización necesario."
+            }
+          ],
+          "choices": {
+            "A": {
+              "text": "Intentar descifrar los documentos.",
+              "result": "Alex encuentra conexiones sospechosas entre experimentos y personal desaparecido."
+            },
+            "B": {
+              "text": "Buscar el código de autorización.",
+              "result": "Encuentra un fragmento del código oculto entre los documentos, pero la información sigue incompleta."
+            }
+          }
+        }
+      ]
+    },
+    "Lila": {
+      "profile": {
+        "age": 23,
+        "occupation": "Estudiante de Psicología"
+      },
+      "story": [
+        {
+          "scene": "Despertar en la Sala de Terapia",
+          "description": "Lila despierta en un sillón rodeada de paredes acolchadas y luces tenues. Su corazón late aceleradamente mientras las voces en su mente se hacen presentes.",
+          "dialogues": [
+            { "system": "Bienvenida, Lila. Este es un espacio seguro." },
+            {
+              "system": "Las paredes reflejan lo que sientes. ¿Qué ves en ellas?"
+            }
+          ],
+          "choices": {
+            "A": {
+              "text": "Ignorar las voces.",
+              "result": "El ambiente se vuelve más silencioso y frío. Lila siente una desconexión creciente con sus emociones."
+            },
+            "B": {
+              "text": "Escuchar las voces.",
+              "result": "Las voces se vuelven más claras, revelando recuerdos ocultos que despiertan sentimientos olvidados."
+            }
+          }
+        },
+        {
+          "scene": "Exploración en la Galería de Memorias",
+          "description": "Lila camina por pasillos serpenteantes llenos de imágenes distorsionadas y objetos familiares. La luz cambia según sus emociones.",
+          "dialogues": [
+            { "system": "Cada recuerdo guarda un fragmento de la verdad." },
+            { "system": "Ten cuidado, algunas memorias pueden ser engañosas." }
+          ],
+          "choices": {
+            "A": {
+              "text": "Revisar objetos de la infancia.",
+              "result": "Lila encuentra un diario infantil que revela momentos clave de su pasado."
+            },
+            "B": {
+              "text": "Seguir las luces cambiantes.",
+              "result": "Las luces la guían a un recuerdo perturbador, pero crucial para comprender su trauma."
+            }
+          }
+        }
+      ]
+    },
+    "Gabriel": {
+      "profile": {
+        "age": 31,
+        "occupation": "Experto en IA y Realidad Virtual"
+      },
+      "story": [
+        {
+          "scene": "Despertar en el Núcleo de Procesamiento",
+          "description": "Gabriel despierta conectado a cables y rodeado de hologramas flotantes. Su respiración se sincroniza con los pulsos de luz del sistema.",
+          "dialogues": [
+            {
+              "system": "Estado de fusión: 87%. Bienvenido de nuevo, Dr. Reyes."
+            },
+            { "system": "Precaución: Integridad de datos en riesgo." }
+          ],
+          "choices": {
+            "A": {
+              "text": "Hackear el sistema.",
+              "result": "Gabriel altera los códigos, pero desencadena una serie de errores que comprometen la estabilidad del entorno."
+            },
+            "B": {
+              "text": "Estudiar la arquitectura.",
+              "result": "Gabriel analiza el sistema y descubre vulnerabilidades ocultas en el código."
+            }
+          }
+        },
+        {
+          "scene": "Exploración en el Archivo de Realidades",
+          "description": "Gabriel navega por bibliotecas digitales y mundos en miniatura flotantes, buscando respuestas entre patrones y datos codificados.",
+          "dialogues": [
+            { "system": "Acceso a realidades alternativas habilitado." },
+            { "system": "Advertencia: Fusión neural en proceso irreversible." }
+          ],
+          "choices": {
+            "A": {
+              "text": "Crear una simulación segura.",
+              "result": "Gabriel diseña un entorno virtual estable, pero descubre información incompleta."
+            },
+            "B": {
+              "text": "Acceder a archivos restringidos.",
+              "result": "Encuentra datos prohibidos que revelan la verdadera naturaleza del experimento."
+            }
+          }
+        }
+      ]
+    }
+  },
+  "keyword": "REINICIO"
+}
